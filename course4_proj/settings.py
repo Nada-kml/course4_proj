@@ -39,6 +39,8 @@ class Dev(Configuration):
     OMDB_KEY = "de0efdc5"
     CELERY_RESULT_BACKEND = "django-db"
     CELERY_BROKER_URL = "redis://localhost:6379/0"
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    ADMINS = [("Nada", "kamali.nade@gmail.com")]
     # Application definition
 
     INSTALLED_APPS = [
